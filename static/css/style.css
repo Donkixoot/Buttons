@@ -1,0 +1,51 @@
+body{
+    font-family: Open Sans;
+    margin: 0;
+    white-space: pre-line
+}
+p {
+    font-size: 22px;
+    margin: 10px 40px;
+}
+h1, h2 {
+    margin: 20px 40px;
+}
+a {
+    font-size: 18px;
+    margin: 0px 10px;
+}
+label{
+    margin: 0px 10px 0px 40px;
+}
+button {
+    vertical-align: middle;
+    padding: 20px;
+    margin: 10px 20px 20px 40px;
+    font-size: 18px;
+}
+.header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    min-height: 5vh;
+    padding: 8px 50px;
+    background-color: #DCDCDC;
+}
+.name {
+    margin: 0;
+    margin-right: auto;
+}
+.quest {
+    font-size: 24px;
+    font-weight: 900;
+    margin: 20px 0px 0px;
+}
+.ans {
+    float: left;
+    display: table-cell;
+    vertical-align: bottom;
+    height: 50px;
+    font-size: 24px;
+    font-weight: 900;
+}
+

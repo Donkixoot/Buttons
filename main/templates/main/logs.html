@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Журнал</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="header">
+        <p class="name">Задание №1</p>
+        <nav>
+            <a href="/">Главная</a>
+            <a href="/about">Об авторе</a>
+            <a href="/logs">Журнал</a>
+        </nav>
+    </div>
+    <p id="log">{{ file_content }}</p>
+    <table id="tbl"></table>
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <script>
+        let text = document.getElementById('log').innerHTML;
+        text = text.replace(/\[/g, '');
+        text = text.replace(/\]/g, '');
+        text = text.replace(/\,/g, '');
+        text = text.replace(/n/g, '');
+        document.getElementById('log').innerHTML = text.replace(/'/g, '<br>');
+    </script>
+</body>
+</html>

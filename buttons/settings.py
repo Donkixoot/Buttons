@@ -28,7 +28,7 @@ LOGGING = {
         'file': {
             'level': 'INFO',
             'class': 'logging.FileHandler',
-            'filename': '/Django/buttons/static/log.txt',
+            'filename': '/static/log.txt',
             'formatter': 'myformatter',
         },
     },
